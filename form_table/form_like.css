@@ -1,0 +1,74 @@
+body{  
+    font-family: Calibri, Helvetica, sans-serif;   
+}  
+
+.likeOfYou {
+    text-align: center;
+    font-size: 32px;
+    background-color: orangered;
+    color: #fff;
+}
+
+input[type=text]{  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+input[type=text]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+div {  
+  padding: 10px 0;  
+}  
+
+.sendInforbtn {  
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 16px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 10%;  
+    opacity: 0.9;  
+}  
+.sendInforbtn:hover {  
+    opacity: 1;  
+} 
+
+.restbtn {  
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 16px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 10%;  
+    opacity: 0.9;  
+}  
+.restbtn:hover {  
+    opacity: 1;  
+} 
+
+input[type=checkbox]{   
+    padding: 15px;  
+    margin: 12px 30px 30px 30px;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+input[type=checkbox]:focus {  
+  background-color: orange;  
+  outline: none;  
+}
+
+.labelBlue {
+    color: blue;
+}
+
+label {
+    color: orangered;
+}
