@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+    <link rel="stylesheet" href="form_register.css">
+</head>
+
+<body>
+    <section class="vh-100 gradient-custom">
+        <form>
+            <div class="container">
+                <center>
+                    <h1> Đăng ký học viên</h1>
+                </center>
+                <hr>
+                <div>
+                    <label> <b>Họ và tên</b> </label>
+                    <input type="text" name="firstname" placeholder="Nhập họ và tên" size="15" required />
+                </div>
+                <div>
+                    <label> <b> Ngày sinh</b></label>
+                    <input type="text" name="date" placeholder="date" size="15" required />
+                </div>
+                <div >
+                    <label><b>Lớp</b></label>
+                    <select class="selectionRoom">
+                        <option value="0">Chọn lớp</option>
+                        <option value="1">Lớp 1</option>
+                        <option value="2">Lớp 2</option>
+                        <option value="3">Lớp 3</option>
+                        <option value="4">Lớp 4</option>
+                        <option value="5">Lớp 5</option>
+                    </select>
+                </div>
+                <div class="sex">
+                    <label><b>Giới tính</b></label>
+                    <input type="radio" value="Male" name="gender" checked class="male"> Nam
+                    <input type="radio" value="Female" name="gender" class="female"> Nữ
+                </div>
+                <div>
+                    <label> <b>Số điện thoại</b></label>
+                    <input type="text" name="country code" placeholder="Country Code" value="+84" size="2" />
+                </div>
+                <div>
+                    <label for=""><b>Địa chỉ</b></label>
+                    <textarea cols="80" rows="5" placeholder="Địa chỉ" value="address" required>
+                    </textarea>
+                </div>
+                <div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Nhập Email" name="email" required>
+                </div>
+                <div>
+                    <button type="submit" class="registerbtn">Đăng ký</button>
+                    <button type="reset" class="restbtn">Nhập lại</button>
+                </div>
+        </form>
+    </section>
+</body>
+
+</html>
