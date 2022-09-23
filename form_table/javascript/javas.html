@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Tinh tong</h1>
+        <input type="text" placeholder="Amount" id="amount" >
+        <select name="" id="toCurrency">
+            <option value="toVN">VietNam</option>
+            <option value="toUSD">USD</option>
+        </select>
+        <select name="" id="formCurrency">
+            <option value="formVN">VietNam</option>
+            <option value="formUSD">USD</option>
+        </select>
+        <button  onclick="convert()" >Convert</button>
+        <p>Tong la: </p>
+        <p id="result"></p>
+    </div>
+    <script>
+        function convert() {
+            // alert("hello");
+           let amount = document.getElementById('amount').value
+           let toCurrency = document.getElementById('toCurrency').value
+           let formCurrency = document.getElementById('formCurrency').value
+           console.log(toCurrency)
+           console.log(formCurrency)
+           if (toCurrency == "toVN" && formCurrency == "formUSD"){
+                console.log("a")
+                document.getElementById('result').innerHTML = amount/24000;
+           } else  if(toCurrency == "toUSD" && formCurrency == "formVN"){
+            document.getElementById('result').innerHTML = amount*24000;
+           } else{
+            document.getElementById('result').innerHTML = amount;
+           }
+        }
+        
+    </script>
+</body>
+
+</html>
